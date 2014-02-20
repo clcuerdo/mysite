@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Last Seen</title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/front.css' %}" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<label>Last Seen</label>
+			</div>
+			<div class="controls">
+				<a href="/">Login</a>
+				<a href="/">Signup</a>
+			</div>
+		</div>
+			<!-- <div class="header">
+				<div class="controls">
+					{% if user %}
+						{{user.name}}
+						(<a class="gray-link" href="/logout">logout</a>)
+					{% else %}
+						<a class="gray-link" href="/login">login</a>
+						<a class="gray-link" href="/signup">signup</a>
+					{% endif %}
+				</div>
+
+				<div class="controls">
+					{% block controls %}
+					{% endblock %}
+				</div>
+
+				<div class="clear"></div>
+			</div>
+
+			<div id="content">
+				{% block content %}
+				{% endblock %}
+			</div> -->
+	</body>
+</html>
