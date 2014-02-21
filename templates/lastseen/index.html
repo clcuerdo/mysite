@@ -2,7 +2,7 @@
 	<head>
 		<title>Last Seen</title>
 		{% load static %}
-		<link rel="stylesheet" type="text/css" href="{% static 'css/front.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/lastseen_front.css' %}" />
 	</head>
 
 	<body>
@@ -11,9 +11,17 @@
 				<label>Last Seen</label>
 			</div>
 			<div class="controls">
-				<a href="/">Login</a>
-				<a href="/">Signup</a>
+				<input type="button" name="login" value="Login" />
+				<input type="button" name="signup" value="Signup" />
 			</div>
+		</div>
+		<div id="cssmenu">
+			<ul>
+				<li class='active'><span>Home</span></li>
+   				<li><span>Find</span></li>
+   				<li><span>FAQ</span></li>
+   				<li class='last'><span>About</span></li>
+			</ul>	
 		</div>
 			<!-- <div class="header">
 				<div class="controls">
